@@ -22,6 +22,11 @@ public struct Replace<T> {
   public let oldItem: T
   public let newItem: T
   public let index: Int
+  public init(oldItem: T, newItem: T, index: Int) {
+    self.oldItem = oldItem
+    self.newItem = newItem
+    self.index = index
+  }
 }
 
 public struct Move<T> {
